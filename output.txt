@@ -1,0 +1,11 @@
+ 데이터셋 크기: 178 행, 13 열
+
+ 각 특성(컬럼)의 평균 및 표준편차:
+
+        alcohol  malic_acid       ash  alcalinity_of_ash  magnesium  total_phenols  flavanoids  nonflavanoid_phenols  proanthocyanins  color_intensity       hue  od280/od315_of_diluted_wines     proline
+mean  13.000618    2.336348  2.366517          19.494944  99.741573       2.295112    2.029270              0.361854         1.590899         5.058090  0.957449                      2.611685  746.893258
+std    0.811827    1.117146  0.274344           3.339564  14.282484       0.625851    0.998859              0.124453         0.572359         2.318286  0.228572                      0.709990  314.907474
+
+ 'alcohol' 특성의 최대값: 14.83
+
+ 'alcohol' 특성의 최소값: 11.03
