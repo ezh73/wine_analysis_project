@@ -19,13 +19,10 @@ fi
 # 2. 변경된 파일 스테이징
 git add .
 
-# 3. 커밋 메시지 설정
-COMMIT_MESSAGE="자동 커밋: $(date)"
+# 3. 커밋
+git commit -m "자동 커밋: $(date)"
 
-# 4. 커밋
-git commit -m "$COMMIT_MESSAGE"
-
-# 5. 원격 리포지토리에 푸시
+# 4. 원격 리포지토리에 푸시
 git push -u origin master
 
 echo "✅ 스크립트와 결과물이 GitHub에 자동으로 업로드되었습니다."
