@@ -12,18 +12,20 @@ output = []
 
 # 4. 데이터셋 크기 출력
 num_rows, num_cols = df.shape
-output.append(f"데이터셋 크기: {num_rows} 행, {num_cols} 열")
+output.append(f"데이터셋 크기: {num_rows} 행, {num_cols} 열\n")
 
-# 5. 각 특성의 평균(mean)과 표준편차(std) 계산하여 추가
-output.append("\n각 특성(컬럼)의 평균 및 표준편차:\n")
-output.append(df.describe().loc[['mean', 'std']].to_csv())
+# 5. 각 특성(컬럼)의 평균(mean)과 표준편차(std) 계산하여 추가 (가독성 개선)
+output.append("=" * 40)
+output.append("각 특성(컬럼)의 평균 및 표준편차:\n")
+output.append(df.describe().loc[['mean', 'std']].to_string())  # to_string() 사용
+output.append("=" * 40 + "\n")
 
 # 6. 특정 특성('alcohol')의 최대값, 최소값 출력
 alcohol_max = df['alcohol'].max()
 alcohol_min = df['alcohol'].min()
 output.append(f"'alcohol' 특성의 최대값: {alcohol_max}")
-output.append(f"'alcohol' 특성의 최소값: {alcohol_min}")
+output.append(f"'alcohol' 특성의 최소값: {alcohol_min}\n")
 
 # 7. 결과를 파일(output.txt)에 저장
 with open("output.txt", "w", encoding="utf-8") as f:
-    f.write("\n".join(output) + "\n")  # 마지막 개행 추가
+    f.write("\n".join(output))
