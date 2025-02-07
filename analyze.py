@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 from sklearn.datasets import load_wine
 
@@ -27,4 +26,4 @@ output.append(f" 'alcohol' 특성의 최소값: {alcohol_min}\n")
 
 # 7. 결과를 파일(output.txt)에 저장
 with open("output.txt", "w", encoding="utf-8") as f:
-    f.write("\n".join(output))
+    f.write("\n".join(output) + "\n")
