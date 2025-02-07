@@ -17,7 +17,7 @@ output.append(f"데이터셋 크기: {num_rows} 행, {num_cols} 열\n")
 # 5. 각 특성(컬럼)의 평균(mean)과 표준편차(std) 계산하여 추가 (가독성 개선)
 output.append("=" * 40)
 output.append("각 특성(컬럼)의 평균 및 표준편차:\n")
-output.append(df.describe().loc[['mean', 'std']].to_string())  # to_string() 사용
+output.append(df.describe().loc[['mean', 'std']].to_string())
 output.append("=" * 40 + "\n")
 
 # 6. 특정 특성('alcohol')의 최대값, 최소값 출력
