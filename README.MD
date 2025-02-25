@@ -1,6 +1,7 @@
 Wine Analysis Project
 이 프로젝트는 Scikit-learn의 Wine 데이터셋을 사용하여 데이터 분석 및 시각화를 수행하는 데 중점을 둡니다. Python을 활용해 데이터를 분석하고, 그 결과를 GitHub에 업로드하여 버전 관리를 자동화합니다.
 
+```
 wine_analysis_project/
 │
 ├── analyze.py             # 데이터셋 분석 스크립트
@@ -9,7 +10,7 @@ wine_analysis_project/
 ├── environment.yml        # Conda 환경 설정 파일
 ├── output.txt             # 분석 결과 출력 파일
 └── log.txt                # 분석 실행 로그 파일
-
+```
 
 analyze.py
 Scikit-learn의 Wine 데이터셋을 불러와 데이터의 통계적 정보를 계산합니다.
